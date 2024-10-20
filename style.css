@@ -1,0 +1,319 @@
+:root {
+    --primary-Color: rgb(5, 219, 5);
+}
+
+*,
+body {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    font-family: "Lato", sans-serif;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-Color);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: rgb(88, 88, 88);
+}
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 800;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.buss-seat-left {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--primary-Color);
+    background-color: rgba(0, 128, 0, 0.164);
+    border: 1px solid rgba(0, 128, 0, 0.377);
+    padding: 9px 20px;
+    border-radius: 10px;
+}
+
+
+/* navigation-section */
+header .navigation-section .flex {
+    gap: 50px;
+}
+
+header .navigation-section .logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+
+/* banner */
+header .banner .bg-img {
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    border-radius: 30px;
+    color: white;
+}
+
+header .banner .bg-img .text {
+    max-width: 800px;
+    /* min-width: 80%; */
+    text-align: center;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .banner .bg-img h1 {
+    font-size: 60px;
+    width: 100%;
+}
+
+header .banner .bg-img h1>span {
+    color: var(--primary-Color);
+}
+
+header .banner .bg-img p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/* bg-footer */
+header .banner .flex {
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -30px;
+}
+
+header .banner .flex>.flex {
+    border-bottom: 3px solid var(--primary-Color);
+    border-radius: 20px;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+}
+
+header .banner .flex img {
+    width: 80%;
+}
+
+header .banner .flex h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+header .banner .flex p {
+    margin-top: 0;
+    color: gray;
+}
+
+
+/* Best offers for you */
+main .offers {
+    text-align: center;
+    padding: 100px 0;
+}
+
+main .offers .flex2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .offers h2 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+main .offers .cards img {
+    width: 100%;
+    margin-bottom: -3px;
+}
+
+main .offers .card div .para1 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: -40px;
+    margin-bottom: -10px;
+}
+
+main .offers .card div .para2 {
+    color: rgb(65, 65, 65);
+}
+
+main .offers .card div .coupon {
+    margin-top: -40px;
+}
+
+main .offers .card {
+    flex-basis: 49%;
+    border-radius: 25px;
+}
+
+main .offers .first-text {
+    width: 49%;
+}
+
+main .offers .last-text {
+    width: 49%;
+}
+
+main .offers .card1 {
+    background-color: orange;
+}
+
+main .offers .card2 {
+    background-color: rgb(247, 149, 165);
+}
+
+main .offers button {
+    background-color: white;
+    border: 2px solid var(--primary-Color);
+    color: var(--primary-Color);
+    margin: 50px;
+}
+
+
+/* chango-paribahan */
+main .chango-paribahan {
+    border-top: 2px solid var(--primary-Color);
+    border-radius: 70px 70px 0 0;
+    background-color: rgba(128, 128, 128, 0.103);
+}
+
+main .chango-paribaha-heading {
+    text-align: center;
+    width: 60%;
+    margin: 100px auto 50px auto;
+}
+
+main .ticket-price-detals .left-header {
+    padding: 0 20px 20px 20px;
+}
+
+main .ticket-price-detals .left-header .logo-heading {
+    gap: 20px;
+}
+
+main .ticket-price-detals .left-header .buss-seat-left {
+    border: none;
+    gap: 5px;
+}
+
+main .ticket-price-detals .left-header .heading p {
+    padding-bottom: 15px;
+    margin-top: 8px;
+}
+
+main .ticket-price-detals {
+    background-color: white;
+    border-radius: 20px;
+}
+
+main .ticket-price-detals .card-left {
+    width: 70%;
+    margin: auto;
+}
+
+
+main .ticket-price-detals .card-right {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+main .ticket-price-detals .card-left .left-main {
+    background-color: rgba(128, 128, 128, 0.103);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+main .ticket-price-detals .card-left .left-main .flex {
+    height: 60px;
+}
+
+main .ticket-price-detals .card-left .left-main .b-dotted {
+    border-bottom: 1px dashed rgb(202, 202, 202);
+}
+
+main .ticket-price-detals .card-left .left-main .butto {
+    background-color: rgba(176, 176, 176, 0.443);
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+/* Select Your Seat */
+label {
+    display: block;
+}
+
+main .select-seat .card {
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+
+main .select-seat>.flex {
+    align-items: flex-start;
+}
+
+main .select-seat .card .card-right {
+    border-left: 2px dashed rgb(202, 202, 202);
+    width: 40%;
+    padding: 20px;
+}
+
+main .select-seat .card .card-left {
+    width: 60%;
+    padding: 20px;
+}
+main .select-seat .card .card-left .left-header h2 {
+    border-bottom: 1px dashed rgb(202, 202, 202); 
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+main .select-seat .card .card-left .left-header {
+    border-bottom: 1px dashed rgb(202, 202, 202); 
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}

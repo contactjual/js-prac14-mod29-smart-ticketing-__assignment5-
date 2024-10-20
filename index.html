@@ -6,36 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buss Ticket</title>
 
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
     <header>
         <div class="container">
-            <section class="navigation-section">
-                <h1 class="name">Buss Ticket</h1>
+            <!-- navigation-section -->
+            <section class="navigation-section flex">
+                <h1 class="name">Buss-Ticket</h1>
                 <div class="pages">
-                    <ul>
+                    <ul class="flex">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About </a></li>
                         <li><a href="#">Destination</a></li>
                         <li><a href="#">Search</a></li>
                     </ul>
                 </div>
-                <div class="logo">
-                    <span>Buss</span><img src="images/bus-icon.png" alt="">
+                <div class="logo buss-seat-left">
+                    <span>Buss</span>
+                    <img src="images/bus-icon.png" alt="">
                 </div>
             </section>
+            <!-- banner -->
             <section class="banner">
                 <div class="bg-img">
-                    <h1>End-to-End Travel with <span>P Paribahan</span></h1>
-                    <p>Yes, you can run unit tests and view the results directly within the app. The
-                        integrated testing features allow for a streamlined .</p>
-                    <button>Buy Tickets</button>
+                    <div class="text">
+                        <h1>End-to-End Travel with <span>Chango Paribahan</span></h1>
+                        <p>Yes, you can run unit tests and view the results directly within the app. The
+                            integrated testing features allow for a streamlined .</p>
+                        <button>Buy Tickets</button>
+                    </div>
                 </div>
-                <div class="bg-footer">
-                    <div class="user">
+                <div class="bg-footer flex">
+                    <div class="user flex">
                         <div class="user-icon">
                             <img src="images/people.png" alt="">
                         </div>
@@ -44,7 +55,7 @@
                             <p>Registered users</p>
                         </div>
                     </div>
-                    <div class="sold">
+                    <div class="sold flex">
                         <div class="sold-icon">
                             <img src="images/ticket-cupon.png" alt="">
                         </div>
@@ -53,7 +64,7 @@
                             <p>Tickets sold</p>
                         </div>
                     </div>
-                    <div class="partners">
+                    <div class="partners flex">
                         <div class="partners-icon">
                             <img src="images/stoppage.png" alt="">
                         </div>
@@ -67,36 +78,37 @@
         </div>
     </header>
     <main>
+        <!-- Best offers for you -->
         <div class="container">
             <section class="offers">
                 <h2>Best offers for you</h2>
-                <div class="cards">
-                    <div class="card1">
+                <div class="cards flex2">
+                    <div class="card1 card flex">
                         <div class="first-text">
                             <h2>15% OFF</h2>
-                            <p>on your next purchase</p>
-                            <p>use by January 2024</p>
+                            <p class="para1">on your next purchase</p>
+                            <p class="para2">use by January 2024</p>
                         </div>
                         <div class="devider">
                             <img src="images/cupon-devider.png" alt="">
                         </div>
                         <div class="last-text">
                             <h2>NEW15</h2>
-                            <p>Coupon Code</p>
+                            <p class="para2 coupon">Coupon Code</p>
                         </div>
                     </div>
-                    <div class="card2">
+                    <div class="card2 card flex">
                         <div class="first-text">
                             <h2>20% OFF</h2>
-                            <p>on your next purchase</p>
-                            <p>use by January 2024</p>
+                            <p class="para1">on your next purchase</p>
+                            <p class="para2">use by January 2024</p>
                         </div>
                         <div class="devider">
                             <img src="images/cupon-devider.png" alt="">
                         </div>
                         <div class="last-text">
                             <h2>Couple 20</h2>
-                            <p>Coupon Code</p>
+                            <p class="para2 coupon">Coupon Code</p>
                         </div>
                     </div>
                 </div>
@@ -104,6 +116,7 @@
             </section>
         </div>
 
+        <!-- chango-paribahan -->
         <section class="chango-paribahan">
             <div class="container">
                 <div class="chango-paribaha-heading">
@@ -112,10 +125,10 @@
                         testing features allow for a streamlined.</p>
                 </div>
                 <div class="ticket-price-detals">
-                    <div class="card">
+                    <div class="card  flex">
                         <div class="card-left">
-                            <div class="left-header">
-                                <div class="logo-heading">
+                            <div class="left-header flex">
+                                <div class="logo-heading flex">
                                     <div class="logo">
                                         <img src="images/bus-logo.png" alt="">
                                     </div>
@@ -124,48 +137,49 @@
                                         <p>Coach-009-WEB ! AC_Business</p>
                                     </div>
                                 </div>
-                                <div class="seat">
+                                <div class="seat flex buss-seat-left">
                                     <img src="images/seat-green.png" alt="">
-                                    <span>0</span>
-                                    <span class="left"> Seats left</span>
+                                    <span class="left"> <span>0</span> Seats left</span>
                                 </div>
                             </div>
                             <div class="left-main">
-                                <div class="route flex">
+                                <div class="route flex b-dotted">
                                     <span>Route</span>
                                     <span>Dhaka-Sylhet</span>
                                 </div>
-                                <div class="time flex">
+                                <div class="time flex b-dotted">
                                     <span>Departure Time</span>
                                     <span>9:00 PM</span>
                                 </div>
-                                <div class="main-butt flex">
-                                    <div class="butt">
-                                        <p>Boarding Point - Laxmipur</p>
+                                <div class="main-butto flex">
+                                    <div class="butto ">
+                                        <span>Boarding Point - Laxmipur</span>
                                     </div>
-                                    <div class="butt">
-                                        <p>Dropping Point - Bogura E</p>
+                                    <div class="butto">
+                                        <span>Dropping Point - Bogura E</span>
                                     </div>
-                                    <div class="butt">
-                                        <p>Est. Time - 11 Hour</p>
+                                    <div class="butto">
+                                        <span>Est. Time - 11 Hour</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <img src="images/info-devider.png" alt="">
-                        <div class="taka">
+                        <div class="taka card-right">
                             <img src="images/fare.png" alt="">
                             <h2>500 Taka</h2>
                             <p>Per Seat</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Select Your Seat -->
                 <div class="select-seat">
-                    <div class="card">
+                    <div class="card flex">
                         <div class="card-left">
                             <div class="left-header">
                                 <h2>Select Your Seat</h2>
-                                <div class="icons">
+                                <div class="icons flex">
                                     <div class="available">
                                         <img src="images/seat-gray.png" alt="">
                                         <span>Available</span>
