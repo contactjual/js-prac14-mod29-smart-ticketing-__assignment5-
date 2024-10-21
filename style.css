@@ -64,6 +64,7 @@ h2 {
 /* navigation-section */
 header .navigation-section .flex {
     gap: 50px;
+    padding: 30px 0 50px 0;
 }
 
 header .navigation-section .logo {
@@ -79,17 +80,17 @@ header .banner .bg-img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 716px;
     width: 100%;
     border-radius: 30px;
     color: white;
 }
 
-header .banner .bg-img .text {
-    max-width: 800px;
-    /* min-width: 80%; */
+header .banner .bg-img .text-height {
+    max-width: 50%;
     text-align: center;
     margin: auto;
+    height: 600px;
 
     display: flex;
     flex-direction: column;
@@ -100,6 +101,7 @@ header .banner .bg-img .text {
 header .banner .bg-img h1 {
     font-size: 60px;
     width: 100%;
+    padding-bottom: 30px;
 }
 
 header .banner .bg-img h1>span {
@@ -117,13 +119,13 @@ header .banner .bg-img p {
 header .banner .flex {
     justify-content: space-around;
     align-items: center;
-    margin-top: -30px;
+    margin-top: -40px;
 }
 
 header .banner .flex>.flex {
     border-bottom: 3px solid var(--primary-Color);
     border-radius: 20px;
-    padding: 10px 30px;
+    padding: 3%;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -172,7 +174,6 @@ main .offers .card div .para1 {
     font-weight: 700;
     font-size: 20px;
     margin-top: -40px;
-    margin-bottom: -10px;
 }
 
 main .offers .card div .para2 {
@@ -225,6 +226,8 @@ main .chango-paribaha-heading {
     margin: 100px auto 50px auto;
 }
 
+
+/* ticket-price-detals */
 main .ticket-price-detals .left-header {
     padding: 0 20px 20px 20px;
 }
@@ -277,7 +280,7 @@ main .ticket-price-detals .card-left .left-main .b-dotted {
 main .ticket-price-detals .card-left .left-main .butto {
     background-color: rgba(176, 176, 176, 0.443);
     margin-top: 30px;
-    padding: 15px;
+    padding: 15px 1%;
     border-radius: 10px;
 }
 
@@ -333,11 +336,22 @@ main .select-seat .card .card-left .left-header .flex .flex {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 main .select-seat {
     padding: 30px 0 150px 0;
 }
 
-
+/* footer  */
 footer {
     background-color: black;
     color: white;
@@ -378,7 +392,8 @@ footer .footer-secton .right-contant .flex {
 
 footer .footer-secton .down {
     border-top: 1px dashed rgba(202, 202, 202, 0.637);
-    margin-top: 40px;
+    margin-top: 50px;
+    padding-top: 30px;
 }
 
 footer .footer-secton .down .flex {
