@@ -15,6 +15,9 @@ body {
     margin: 0 auto;
     font-family: "Lato", sans-serif;
 }
+.for-mobile img {
+    display: none;
+}
 
 button {
     padding: 15px 20px;
@@ -225,6 +228,9 @@ main .chango-paribaha-heading {
     width: 60%;
     margin: 100px auto 50px auto;
 }
+main .chango-paribaha-heading p {
+    padding: 20px 0;
+}
 
 
 /* ticket-price-detals */
@@ -299,20 +305,21 @@ main .select-seat .card {
 
 main .select-seat>.flex {
     align-items: flex-start;
+    padding-bottom: 20px;
 }
 
 main .select-seat .card .card-right {
-    border-left: 2px dashed rgb(202, 202, 202);
     width: 40%;
     padding: 20px;
 }
 
 main .select-seat .card .card-left {
+    border-right: 2px dashed rgb(202, 202, 202);
     width: 60%;
     padding: 20px;
 }
 
-main .select-seat .card .card-left .left-header h2 {
+main .select-seat .card .card-left .left-header h2, main .select-seat .card .card-right .right-header h2, main .select-seat .card .card-right .s-c-p {
     border-bottom: 1px dashed rgb(202, 202, 202);
     padding-bottom: 10px;
     margin-bottom: 15px;
@@ -347,22 +354,64 @@ main .select-seat .card .card-left .left-main .grid {
     justify-content: center;
 }
 
+/* right  */
+main .select-seat .card .card-right .right-main span {
+    font-weight: 700;
+}
+main .select-seat .card .card-right .right-main .seat-count {
+    font-size: 12px;
+    background-color: var(--primary-Color);
+    padding: 0 5px;
+    border-radius: 20px;
+}
+main .select-seat .card .card-right .right-main .calculation-area {
+    background-color: rgba(176, 176, 176, 0.166);
+    padding: 20px;
+    border-radius: 10px;
+}
+main .select-seat .card .card-right .right-main .coupon-input {
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+main .select-seat .card .card-right .right-main .coupon-input input {
+    width: 60%;
+    font-size: 14px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    outline: none;
+}
+main .select-seat .card .card-right .right-main .coupon-input button {
+    /* width: 30%; */
+    color: white;
+    padding: 14px 16px;
+    font-size: 13px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* passenger-input */
+main .select-seat .card .card-right .right-main .passenger-input input {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1.5px solid rgba(176, 176, 176, 0.5);
+}
+main .select-seat .card .card-right .right-main .passenger-input label {
+    padding: 13px 0;
+    font-weight: 700;
+}
+main .select-seat .card .card-right .right-main .passenger-input button {
+    width: 100%;
+    margin: 20px 0;
+}
+main .select-seat .card .card-right .right-main .passenger-input .flex {
+    justify-content: center;
+    gap: 10%;
+    text-decoration: underline;
+}
 
 
 main .select-seat {
@@ -373,7 +422,7 @@ main .select-seat {
 footer {
     background-color: black;
     color: white;
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 footer a {

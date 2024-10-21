@@ -1,0 +1,137 @@
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 98%;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+
+    header .navigation-section {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    header .navigation-section ul{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    /* banner */
+    header .banner .bg-img h1 {
+        font-size: 30px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    header .banner .bg-img p {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    header .banner .bg-img .text-height {
+        max-width: 90%;
+        margin: auto;
+        height: 300px;
+    }
+    header .banner .bg-img {
+        background-image: none;
+        height: 270px;
+        color: black;
+    }
+    .for-mobile img {
+        display: block;
+        width: 100%;
+    }
+
+    /* bg-footer  */
+    header .banner .flex {
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    header .banner .flex h2 {
+        font-size: 20px;
+    }
+
+
+    /* Best offers for you  */
+    main .offers h2 {
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 50px;
+    }
+    main .offers .flex2 {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    /* chango poribohon */
+    main .chango-paribaha-heading {
+        width: 90%;
+        margin: 50px auto 25px auto;
+    }
+
+    /* ticket-price-detals */
+    main .ticket-price-detals .card {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    main .ticket-price-detals .diveder {
+        display: none;
+    }
+    main .ticket-price-detals .card-left {
+        width: 100%;
+    }
+    main .ticket-price-detals .card-left>.flex {
+        flex-direction: column;
+    }
+    main .ticket-price-detals .left-header .heading h2 {
+        font-size: 25px;
+    }
+    main .ticket-price-detals .card-left .left-main .butto {
+        padding: 8px 1%;
+        margin-right: 3px;
+        font-size: 12px;
+    }
+
+    /* right */
+    main .ticket-price-detals .card-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    /* Select Your Seat */
+    main .select-seat>.flex {
+        flex-direction: column;
+    }
+    main .select-seat .card .card-left {
+        border-right: none;
+        width: 100%;
+        padding: 20px;
+    }
+    main .select-seat .card .card-right {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    /* footer */
+    footer .footer-secton .upper {
+        flex-direction: column;
+    }
+    footer .footer-secton .left-contant {
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer-secton .down {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+}

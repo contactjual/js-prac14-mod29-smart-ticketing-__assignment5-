@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- css file  -->
-
     <link rel="stylesheet" href="style.css">
+
+    <!-- responsive file  -->
+     <link rel="stylesheet" href="responsive.css">
 
 </head>
 <body>
@@ -42,6 +44,9 @@
             </section>
             <!-- banner -->
             <section class="banner">
+                <div class="for-mobile">
+                    <img src="images/banner.png" alt="">
+                </div>
                 <div class="bg-img">
                     <div class="text-height">
                         <div class="text">
@@ -173,7 +178,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="images/info-devider.png" alt="">
+                        <img src="images/info-devider.png" alt="" class="diveder">
                         <div class="taka card-right">
                             <img src="images/fare.png" alt="">
                             <h2>500 Taka</h2>
@@ -282,7 +287,7 @@
                             <div class="right-main">
                                 <div class="calculation-area">
                                     <div class="s-c-p flex">
-                                        <span>Seat <span class="small">0</span></span>
+                                        <span>Seat <span class="seat-count">0</span></span>
                                         <span>Class</span>
                                         <span>Price</span>
                                     </div>
@@ -290,10 +295,10 @@
 
                                     </div>
                                     <div class="tot-price flex">
-                                        <span>Total Price</span>
+                                        <span >Total Price</span>
                                         <span>BDT <span>0</span></span>
                                     </div>
-                                    <div class="coupon-input">
+                                    <div class="coupon-input flex">
                                         <input type="text" placeholder="Have any copupon?">
                                         <button>Apply</button>
                                     </div>
