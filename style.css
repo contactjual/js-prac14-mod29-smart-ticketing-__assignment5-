@@ -7,11 +7,12 @@ body {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    margin: 0;
 }
 
 .container {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     font-family: "Lato", sans-serif;
 }
 
@@ -307,13 +308,84 @@ main .select-seat .card .card-left {
     width: 60%;
     padding: 20px;
 }
+
 main .select-seat .card .card-left .left-header h2 {
-    border-bottom: 1px dashed rgb(202, 202, 202); 
+    border-bottom: 1px dashed rgb(202, 202, 202);
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
+
 main .select-seat .card .card-left .left-header {
-    border-bottom: 1px dashed rgb(202, 202, 202); 
+    border-bottom: 1px dashed rgb(202, 202, 202);
     padding-bottom: 10px;
     margin-bottom: 10px;
+}
+
+main .select-seat .card .card-left .left-header .flex .flex {
+    align-items: center;
+    gap: 6px;
+}
+
+
+
+
+
+
+
+
+main .select-seat {
+    padding: 30px 0 150px 0;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer .footer-secton .left-contant {
+    width: 30%;
+}
+
+footer .footer-secton .left-contant p {
+    color: rgba(202, 202, 202, 0.637);
+}
+
+footer .footer-secton .right-contant h2 {
+    font-size: 20px;
+}
+
+footer .footer-secton .right-contant .playstore-butt p {
+    font-size: 13px;
+}
+
+footer .footer-secton .right-contant .playstore-butt h2 {
+    margin-top: 0px;
+}
+
+footer .footer-secton .right-contant .flex {
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0 5px;
+    margin-top: 20px;
+}
+
+footer .footer-secton .down {
+    border-top: 1px dashed rgba(202, 202, 202, 0.637);
+    margin-top: 40px;
+}
+
+footer .footer-secton .down .flex {
+    gap: 30px;
+}
+
+footer .footer-secton .down .copy-right p {
+    font-size: 13px;
+    color: rgba(202, 202, 202, 0.637);
 }
