@@ -30,7 +30,6 @@ function selectSeat(seat) {
         selectedSeat--;
         sum = sum - perSeatPrice;
 
-
         // ------------- remove seat details--------------------------------
         let seatDetails = document.getElementsByClassName(seat.innerText);
         for (let seatDet of seatDetails) {
@@ -49,7 +48,6 @@ function selectSeat(seat) {
             setLeft--;
             selectedSeat++;
             sum = perSeatPrice + sum;
-
 
             // border-bottom
             const brBotDiv = document.getElementById('bt-bot');
@@ -75,7 +73,6 @@ function selectSeat(seat) {
             div.appendChild(span3);
 
             addSeatHere.appendChild(div)
-            console.log(addSeatHere)
             // ---------------------------------------------
 
             seat.style.backgroundColor = 'rgb(5, 219, 5)';
@@ -83,6 +80,8 @@ function selectSeat(seat) {
         else {
             alert('maximum 3 seats for everyone');
         }
+
+        console.log(selectedSeat)
     }
 
     addTicketData();
@@ -101,5 +100,36 @@ function addTicketData() {
 
     let grandTotalFinal = document.getElementById('grand-total');
     grandTotalFinal.innerText = sum;
-
 }
+
+
+// active next but------------------------------------------------------------
+function activeNextButton() {
+    const inputElement = document.getElementById('phone-number');
+    const inputValue = inputElement.value;
+    const disBut = document.getElementById('dis-but');
+
+    if (selectedSeat > 0 && inputValue !== '') {
+        disBut.removeAttribute('disabled')
+    }
+    else {
+        disBut.setAttribute('disabled', 'true')
+    }
+};
+
+document.addEventListener('keyup', activeNextButton)
+document.addEventListener('click', activeNextButton)
+
+
+
+// active apply button 
+document.addEventListener('click', function () {
+    const disBut = document.getElementById('aplly-but');
+
+    if (selectedSeat === maxSelect) {
+        disBut.removeAttribute('disabled');
+    }
+    else {
+        disBut.setAttribute('disabled', 'true');
+    }
+});

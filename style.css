@@ -394,7 +394,7 @@ main .select-seat .card .card-right .right-main .coupon-input input {
 }
 main .select-seat .card .card-right .right-main .coupon-input button {
     /* width: 30%; */
-    color: white;
+    /* color: white;          disable color not working */
     padding: 14px 16px;
     font-size: 13px;
 }
