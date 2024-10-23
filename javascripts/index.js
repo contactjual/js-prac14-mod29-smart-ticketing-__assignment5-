@@ -11,18 +11,13 @@ let selectedSeat = 0;
 const perSeatPrice = 550;
 let sum = 0;
 
-// create seat details
-// const addSeatHere = document.getElementById('add-seat-here');
-// const span1 = document.createElement('span');
-// const span2 = document.createElement('span');
-// const span3 = document.createElement('span');
+const addSeatHere = document.getElementById('add-seat-here');
 
 const seats = document.querySelectorAll('.butt');
 
-for (var seat of seats) {
+for (let seat of seats) {
     seat.addEventListener('click', function () {
         selectSeat(seat);
-        console.log(seat)
     })
 };
 
@@ -30,28 +25,58 @@ function selectSeat(seat) {
 
     if (seat.classList.contains('selected')) {
         seat.classList.remove('selected');
+
         setLeft++;
-        // console.log(setLeft)
         selectedSeat--;
-        // console.log(selectedSeat)
         sum = sum - perSeatPrice;
 
-        addSeatHere.remove(span1)
-        addSeatHere.remove(span2)
-        addSeatHere.remove(span3)
+
+        // ------------- remove seat details--------------------------------
+        let seatDetails = document.getElementsByClassName(seat.innerText);
+        for (let seatDet of seatDetails) {
+            if (seatDet) {
+                seatDet.remove(); // Seat details remove kora holo
+            }
+        }
+        // ----------------------------------------------------------
 
         seat.style.backgroundColor = 'rgba(128, 128, 128, 0.103)'
     }
     else {
         if (maxSelect > selectedSeat) {
             seat.classList.add('selected')
+
             setLeft--;
             selectedSeat++;
             sum = perSeatPrice + sum;
 
-            addSeatHere.append(span1)
-            addSeatHere.append(span2)
-            addSeatHere.append(span3)
+
+            // border-bottom
+            const brBotDiv = document.getElementById('bt-bot');
+            brBotDiv.style.borderBottom = '1px dashed rgb(202, 202, 202)';
+            brBotDiv.style.margin = '10px 0';
+
+            // ------------- show seat details--------------------------------
+            const div = document.createElement('div');
+            div.classList.add('flex');
+            div.classList.add(seat.innerText); // Seat er unique class add kora holo
+            // -------------------------------------------------------------------
+
+            const span1 = document.createElement('span');
+            span1.innerText = seat.innerText;
+            div.appendChild(span1);
+
+            const span2 = document.createElement('span');
+            span2.innerText = 'Economoy'
+            div.appendChild(span2);
+
+            const span3 = document.createElement('span');
+            span3.innerText = '550'
+            div.appendChild(span3);
+
+            addSeatHere.appendChild(div)
+            console.log(addSeatHere)
+            // ---------------------------------------------
 
             seat.style.backgroundColor = 'rgb(5, 219, 5)';
         }
@@ -77,7 +102,4 @@ function addTicketData() {
     let grandTotalFinal = document.getElementById('grand-total');
     grandTotalFinal.innerText = sum;
 
-    span1.innerText = seat.innerText;
-    span2.innerText = 'Economoy';
-    span3.innerText = '550'
 }
