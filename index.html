@@ -53,7 +53,7 @@
                             <h1>End-to-End Travel with <span>Chango Paribahan</span></h1>
                             <p>Yes, you can run unit tests and view the results directly within the app. The
                                 integrated testing features allow for a streamlined .</p>
-                            <button>Buy Tickets</button>
+                            <button id="scroll-event">Buy Tickets</button>
                         </div>
                     </div>
                 </div>
@@ -151,9 +151,11 @@
                                         <p>Coach-009-WEB ! AC_Business</p>
                                     </div>
                                 </div>
+
+                                <!-- buss-seat-left -->
                                 <div class="seat flex buss-seat-left">
                                     <img src="images/seat-green.png" alt="">
-                                    <span class="left"> <span>0</span> Seats left</span>
+                                    <span class="left"> <span id="left-seats">40</span> Seats left</span>
                                 </div>
                             </div>
                             <div class="left-main">
@@ -181,14 +183,14 @@
                         <img src="images/info-devider.png" alt="" class="diveder">
                         <div class="taka card-right">
                             <img src="images/fare.png" alt="">
-                            <h2>500 Taka</h2>
+                            <h2>550 Taka</h2>
                             <p>Per Seat</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Select Your Seat -->
-                <div class="select-seat">
+                <div id="scroll-1" class="select-seat">
                     <div class="card flex">
                         <div class="card-left">
                             <div class="left-header">
@@ -203,80 +205,80 @@
                                         <span>Selected</span>
                                     </div>
                                 </div>
-                            </div>
+                            </div>                                           
                             <div class="left-main">
                                 <div class="stayaring grid">
-                                    <button id="butt"><i class="fa-regular fa-circle-down"></i></button>
+                                    <button id="but"><i class="fa-regular fa-circle-down"></i></button>
                                 </div>
                                 <div class="a grid">
                                     <span>A</span>
-                                    <button>A1</button>
-                                    <button>A2</button>
-                                    <button>A3</button>
-                                    <button>A4</button>
+                                    <button class="butt">A1</button>
+                                    <button class="butt">A2</button>
+                                    <button class="butt">A3</button>
+                                    <button class="butt">A4</button>
                                 </div>
                                 <div class="b grid">
                                     <span>B</span>
-                                    <button>B1</button>
-                                    <button>B2</button>
-                                    <button>B3</button>
-                                    <button>B5</button>
+                                    <button class="butt">B1</button>
+                                    <button class="butt">B2</button>
+                                    <button class="butt">B3</button>
+                                    <button class="butt">B4</button>
                                 </div>
                                 <div class="C grid">
                                     <span>C</span>
-                                    <button>C1</button>
-                                    <button>C2</button>
-                                    <button>C3</button>
-                                    <button>C4</button>
+                                    <button class="butt">C1</button>
+                                    <button class="butt">C2</button>
+                                    <button class="butt">C3</button>
+                                    <button class="butt">C4</button>
                                 </div>
                                 <div class="d grid">
                                     <span>D</span>
-                                    <button>D1</button>
-                                    <button>D2</button>
-                                    <button>D3</button>
-                                    <button>D4</button>
+                                    <button class="butt">D1</button>
+                                    <button class="butt">D2</button>
+                                    <button class="butt">D3</button>
+                                    <button class="butt">D4</button>
                                 </div>
                                 <div class="e grid">
                                     <span>E</span>
-                                    <button>E1</button>
-                                    <button>E2</button>
-                                    <button>E3</button>
-                                    <button>E4</button>
+                                    <button class="butt">E1</button>
+                                    <button class="butt">E2</button>
+                                    <button class="butt">E3</button>
+                                    <button class="butt">E4</button>
                                 </div>
                                 <div class="f grid">
                                     <span>F</span>
-                                    <button>F1</button>
-                                    <button>F2</button>
-                                    <button>F3</button>
-                                    <button>F4</button>
+                                    <button class="butt">F1</button>
+                                    <button class="butt">F2</button>
+                                    <button class="butt">F3</button>
+                                    <button class="butt">F4</button>
                                 </div>
                                 <div class="g grid">
                                     <span>G</span>
-                                    <button>G1</button>
-                                    <button>G2</button>
-                                    <button>G3</button>
-                                    <button>G4</button>
+                                    <button class="butt">G1</button>
+                                    <button class="butt">G2</button>
+                                    <button class="butt">G3</button>
+                                    <button class="butt">G4</button>
                                 </div>
                                 <div class="h grid">
                                     <span>H</span>
-                                    <button>H1</button>
-                                    <button>H2</button>
-                                    <button>H3</button>
-                                    <button>H4</button>
+                                    <button class="butt">H1</button>
+                                    <button class="butt">H2</button>
+                                    <button class="butt">H3</button>
+                                    <button class="butt">H4</button>
                                 </div>
                                 <div class="i grid">
                                     <span>I</span>
-                                    <button>I1</button>
-                                    <button>I2</button>
-                                    <button>I3</button>
-                                    <button>I4</button>
+                                    <button class="butt">I1</button>
+                                    <button class="butt">I2</button>
+                                    <button class="butt">I3</button>
+                                    <button class="butt">I4</button>
                                 </div>
                                 <div class="j grid">
                                     <span>J</span>
-                                    <button>J1</button>
-                                    <button>J2</button>
-                                    <button>J3</button>
-                                    <button>J4</button>
+                                    <button class="butt">J1</button>
+                                    <button class="butt">J2</button>
+                                    <button class="butt">J3</button>
+                                    <button class="butt">J4</button>
                                 </div>
                             </div>
                         </div>
@@ -287,24 +289,24 @@
                             <div class="right-main">
                                 <div class="calculation-area">
                                     <div class="s-c-p flex">
-                                        <span>Seat <span class="seat-count">0</span></span>
+                                        <span>Seat <span class="seat-count" id="count-seat">0</span></span>
                                         <span>Class</span>
                                         <span>Price</span>
                                     </div>
-                                    <div class="add-seat-here">
+                                    <div id="add-seat-here" class="flex">
 
                                     </div>
                                     <div class="tot-price flex">
                                         <span >Total Price</span>
-                                        <span>BDT <span>0</span></span>
+                                        <span>BDT <span id="total-price">0</span></span>
                                     </div>
                                     <div class="coupon-input flex">
                                         <input type="text" placeholder="Have any copupon?">
-                                        <button>Apply</button>
+                                        <button disabled>Apply</button>
                                     </div>
-                                    <div class="gra-total">
+                                    <div class="gra-total flex">
                                         <span>Grand Total</span>
-                                        <span>BDT <span>0</span></span>
+                                        <span>BDT <span id="grand-total">0</span></span>
                                     </div>
                                 </div>
                                 <div class="passenger-input">
@@ -318,7 +320,7 @@
                                         <label for="mail">Email ID</label>
                                         <input type="email" placeholder="Enter your email id">
 
-                                        <button>Next</button>
+                                        <button disabled>Next</button>
                                         <div class="terms flex">
                                             <a href="">Terms and Conditions</a>
                                             <a href="">Cancellation Policy</a>
@@ -367,6 +369,9 @@
             </div>
         </section>
     </footer>
+    
+    <script src="javascripts/utility.js"></script>
+    <script src="javascripts/index.js"></script>
 </body>
 
 </html>

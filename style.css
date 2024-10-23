@@ -12,6 +12,7 @@ body {
 
 .container {
     width: 80%;
+    max-width: 1600px;
     margin: 0 auto;
     font-family: "Lato", sans-serif;
 }
@@ -26,6 +27,14 @@ button {
     border-radius: 10px;
     border: none;
     background-color: var(--primary-Color);
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(0, 178, 0);
+}
+button:active {
+    color: rgb(121, 241, 0);
+    transform: scale(.95);
 }
 
 .flex {
@@ -336,7 +345,7 @@ main .select-seat .card .card-left .left-header .flex .flex {
     gap: 6px;
 }
 
-main .select-seat .card .card-left .left-main .stayaring #butt {
+main .select-seat .card .card-left .left-main .stayaring #but {
     grid-column: 5/6;
     background-color: rgba(176, 176, 176, 0.443);
 }
