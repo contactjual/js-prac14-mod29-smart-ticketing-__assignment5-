@@ -217,3 +217,23 @@ function discountRemove() {
         div2.remove();
     }
 }
+
+
+
+
+
+
+
+
+// pop-up 
+function popUpOpen() {
+    document.getElementById('pop_up').style.display = 'flex';
+
+    document.getElementById('body').style.overflow = 'hidden';
+}
+
+function popUpClose() {
+    document.getElementById('pop_up').style.display = 'none';
+
+    document.getElementById('body').style.overflow = 'auto';
+}

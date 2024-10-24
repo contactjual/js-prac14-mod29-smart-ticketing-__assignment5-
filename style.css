@@ -16,6 +16,7 @@ body {
     margin: 0 auto;
     font-family: "Lato", sans-serif;
 }
+
 .for-mobile img {
     display: none;
 }
@@ -29,9 +30,11 @@ button {
     background-color: var(--primary-Color);
     cursor: pointer;
 }
+
 button:hover {
     background-color: rgb(0, 178, 0);
 }
+
 button:active {
     color: rgb(121, 241, 0);
     transform: scale(.95);
@@ -237,6 +240,7 @@ main .chango-paribaha-heading {
     width: 60%;
     margin: 100px auto 50px auto;
 }
+
 main .chango-paribaha-heading p {
     padding: 20px 0;
 }
@@ -328,7 +332,9 @@ main .select-seat .card .card-left {
     padding: 20px;
 }
 
-main .select-seat .card .card-left .left-header h2, main .select-seat .card .card-right .right-header h2, main .select-seat .card .card-right .s-c-p {
+main .select-seat .card .card-left .left-header h2,
+main .select-seat .card .card-right .right-header h2,
+main .select-seat .card .card-right .s-c-p {
     border-bottom: 1px dashed rgb(202, 202, 202);
     padding-bottom: 10px;
     margin-bottom: 15px;
@@ -353,6 +359,7 @@ main .select-seat .card .card-left .left-main .stayaring #but {
 main .select-seat .card .card-left .left-main .grid button {
     background-color: rgba(128, 128, 128, 0.103);
 }
+
 main .select-seat .card .card-left .left-main .grid {
     display: grid;
     /* grid-template-columns: auto auto auto auto auto; */
@@ -367,22 +374,26 @@ main .select-seat .card .card-left .left-main .grid {
 main .select-seat .card .card-right .right-main span {
     font-weight: 700;
 }
+
 main .select-seat .card .card-right .right-main .seat-count {
     font-size: 12px;
     background-color: var(--primary-Color);
     padding: 0 5px;
     border-radius: 20px;
 }
+
 main .select-seat .card .card-right .right-main .calculation-area {
     background-color: rgba(176, 176, 176, 0.166);
     padding: 20px;
     border-radius: 10px;
 }
+
 main .select-seat .card .card-right .right-main .coupon-input {
     background-color: white;
     margin: 20px 0;
     border-radius: 10px;
 }
+
 main .select-seat .card .card-right .right-main .coupon-input input {
     width: 60%;
     font-size: 14px;
@@ -392,6 +403,7 @@ main .select-seat .card .card-right .right-main .coupon-input input {
     padding-left: 20px;
     outline: none;
 }
+
 main .select-seat .card .card-right .right-main .coupon-input button {
     /* width: 30%; */
     /* color: white;          disable color not working */
@@ -408,14 +420,17 @@ main .select-seat .card .card-right .right-main .passenger-input input {
     border-radius: 5px;
     border: 1.5px solid rgba(176, 176, 176, 0.5);
 }
+
 main .select-seat .card .card-right .right-main .passenger-input label {
     padding: 13px 0;
     font-weight: 700;
 }
+
 main .select-seat .card .card-right .right-main .passenger-input button {
     width: 100%;
     margin: 20px 0;
 }
+
 main .select-seat .card .card-right .right-main .passenger-input .flex {
     justify-content: center;
     gap: 10%;
@@ -426,6 +441,53 @@ main .select-seat .card .card-right .right-main .passenger-input .flex {
 main .select-seat {
     padding: 30px 0 150px 0;
 }
+
+
+
+
+/* pop-up area */
+main .chango-paribahan section {
+    display: flex;
+    justify-content: center;
+}
+
+main .pop-up {
+    max-width: 500px;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(221, 221, 221);
+    padding: 50px 50px;
+    text-align: center;
+    border-radius: 20px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+
+    top: 10%;
+}
+
+main .pop-up img {
+    width: 25%;
+}
+
+main .pop-up p {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+main .pop-up h2 {
+    font-size: 25px;
+    color: rgb(5, 162, 5);
+    padding: 10px 0;
+}
+
+main .pop-up .second-para {
+    margin: 0 0 10px 0;
+    color: rgb(86, 86, 86);
+    font-size: 20px;
+}
+
 
 /* footer  */
 footer {

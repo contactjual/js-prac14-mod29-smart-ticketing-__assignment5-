@@ -135,3 +135,13 @@
     }
 
 }
+
+
+
+
+@media screen and (max-width: 550px) {
+    main .pop-up {
+        width: 95%;
+        padding: 20px 10px;
+    }
+}
