@@ -388,7 +388,7 @@ main .select-seat .card .card-right .right-main .coupon-input input {
     font-size: 14px;
     padding: 15px 0;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px 0 0 10px;
     padding-left: 20px;
     outline: none;
 }
